@@ -1,0 +1,4 @@
+$ kubectl get pods -n module6 -l app=inventory -o custom-columns=NAME:.metadata.name,PHASE:.status.phase,READY:.status.containerStatuses[0].ready,RESTARTS:.status.containerStatuses[0].restartCount,IP:.status.podIP
+NAME                         PHASE     READY   RESTARTS   IP
+inventory-7648b58498-qrd66   Running   true    0          10.244.0.7
+inventory-7648b58498-w9kqg   Running   true    0          10.244.0.3

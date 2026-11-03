@@ -1,0 +1,6 @@
+$ kubectl get pods -n module6 -l app=inventory --no-headers
+inventory-7648b58498-qrd66   1/1   Running   0     60s
+inventory-7648b58498-w9kqg   1/1   Running   0     60s
+
+$ kubectl delete pod -n module6 inventory-7648b58498-qrd66
+pod "inventory-7648b58498-qrd66" deleted from module6 namespace

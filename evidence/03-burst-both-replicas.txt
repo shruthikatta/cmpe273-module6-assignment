@@ -1,0 +1,34 @@
+$ kubectl exec -n module6 deployment/inventory-client -- env REQUESTS=30 BURST_LABEL="replica counts" MIN_PODS=2 python /app/burst.py
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=8 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=9 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=10 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=12 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=11 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=12 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=13 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=14 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=15 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=13 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=14 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=16 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=17 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=15 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=18 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=19 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=20 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=21 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=22 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=23 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=24 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=25 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=16 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=26 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=27 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=28 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=29 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=30 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=31 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=17 status=200
+--- replica counts ---
+inventory-7648b58498-qrd66: 10
+inventory-7648b58498-w9kqg: 20

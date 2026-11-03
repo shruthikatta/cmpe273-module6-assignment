@@ -1,0 +1,2 @@
+Unready target: inventory-7648b58498-qrd66
+Stays ready:    inventory-7648b58498-w9kqg

@@ -1,0 +1,15 @@
+$ kubectl logs -n module6 deployment/inventory-client --tail=40
+client starting; inventory service url=http://inventory:8080/inventory
+2026-11-03T03:09:33Z OK via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=1 status=200
+2026-11-03T03:09:34Z OK via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=2 status=200
+2026-11-03T03:09:35Z OK via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=3 status=200
+2026-11-03T03:09:36Z OK via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=1 status=200
+2026-11-03T03:09:37Z OK via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=2 status=200
+2026-11-03T03:09:38Z OK via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=4 status=200
+2026-11-03T03:09:39Z OK via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=5 status=200
+2026-11-03T03:09:40Z OK via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=6 status=200
+2026-11-03T03:09:41Z OK via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=7 status=200
+2026-11-03T03:09:42Z OK via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=3 status=200
+2026-11-03T03:09:43Z OK via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=8 status=200
+2026-11-03T03:09:44Z OK via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=9 status=200
+2026-11-03T03:09:45Z OK via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=4 status=200

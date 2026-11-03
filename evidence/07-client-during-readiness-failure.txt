@@ -1,0 +1,19 @@
+$ kubectl exec -n module6 deployment/inventory-client -- env REQUESTS=16 BURST_LABEL="replica counts while one pod is unready" MIN_PODS=1 python /app/burst.py
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=47 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=49 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=50 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=51 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=52 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=53 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=54 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=55 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=56 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=57 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=58 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=59 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=60 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=61 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=62 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=63 status=200
+--- replica counts while one pod is unready ---
+inventory-7648b58498-w9kqg: 16

@@ -1,0 +1,34 @@
+$ kubectl exec -n module6 deployment/inventory-client -- env REQUESTS=30 BURST_LABEL="replica counts after readiness restored" MIN_PODS=2 python /app/burst.py
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=68 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=69 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=29 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=30 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=70 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=71 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=31 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=32 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=72 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=33 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=34 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=35 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=73 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=36 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=37 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=38 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=74 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=75 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=39 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=40 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=76 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=77 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=41 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=78 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=42 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-qrd66 served=43 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=80 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=81 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=82 status=200
+via http://inventory:8080/inventory -> pod=inventory-7648b58498-w9kqg served=83 status=200
+--- replica counts after readiness restored ---
+inventory-7648b58498-qrd66: 15
+inventory-7648b58498-w9kqg: 15

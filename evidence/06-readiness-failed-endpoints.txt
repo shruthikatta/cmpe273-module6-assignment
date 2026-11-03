@@ -1,0 +1,35 @@
+$ kubectl get endpoints inventory -n module6 -o yaml
+apiVersion: v1
+kind: Endpoints
+metadata:
+  annotations:
+    endpoints.kubernetes.io/last-change-trigger-time: "2026-11-03T03:09:54Z"
+  creationTimestamp: "2026-11-03T03:09:23Z"
+  labels:
+    app: inventory
+    endpoints.kubernetes.io/managed-by: endpoint-controller
+  name: inventory
+  namespace: module6
+  resourceVersion: "607"
+  uid: 952c7e98-e7f7-4b49-8337-1dba08622f89
+subsets:
+- addresses:
+  - ip: 10.244.0.3
+    nodeName: module6-control-plane
+    targetRef:
+      kind: Pod
+      name: inventory-7648b58498-w9kqg
+      namespace: module6
+      uid: 63fc9346-c94f-44c6-a59c-063dcccc62b5
+  notReadyAddresses:
+  - ip: 10.244.0.7
+    nodeName: module6-control-plane
+    targetRef:
+      kind: Pod
+      name: inventory-7648b58498-qrd66
+      namespace: module6
+      uid: 8fc6fa25-b435-4e61-b150-ce478d22e2c3
+  ports:
+  - name: http
+    port: 8080
+    protocol: TCP

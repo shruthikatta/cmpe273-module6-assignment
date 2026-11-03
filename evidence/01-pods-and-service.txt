@@ -1,0 +1,8 @@
+$ kubectl get pods,svc -n module6 -o wide
+NAME                                    READY   STATUS    RESTARTS   AGE   IP           NODE                    NOMINATED NODE   READINESS GATES
+pod/inventory-7648b58498-qrd66          1/1     Running   0          14s   10.244.0.7   module6-control-plane   <none>           <none>
+pod/inventory-7648b58498-w9kqg          1/1     Running   0          14s   10.244.0.3   module6-control-plane   <none>           <none>
+pod/inventory-client-7bc75b5657-2pw7l   1/1     Running   0          14s   10.244.0.4   module6-control-plane   <none>           <none>
+
+NAME                TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)    AGE   SELECTOR
+service/inventory   ClusterIP   10.96.237.6   <none>        8080/TCP   14s   app=inventory
